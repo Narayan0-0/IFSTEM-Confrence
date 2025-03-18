@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IFSTEM 2025 - Bridging Science and Sustainability</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader">
+            <svg viewBox="0 0 80 80">
+                <circle id="test" cx="40" cy="40" r="32"></circle>
+            </svg>
+        </div>
+        <div class="loader-text">IFSTEM 2025</div>
+    </div>
+
+    <!-- Progress Bar -->
+    <div class="progress-container">
+        <div class="progress-bar" id="progressBar"></div>
+    </div>
+
+    <!-- Header & Navigation -->
+    <header id="header">
+        <div class="container">
+            <div class="logo">
+                <h1>IFSTEM<span>2025</span></h1>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#committee">Committee</a></li>
+                    <li><a href="#tracks">Tracks</a></li>
+                    <li><a href="#dates">Important Dates</a></li>
+                    <li><a href="#register" class="nav-btn">Register Now</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div id="particles-js"></div>
+        <div class="container">
+            <div class="hero-content" data-aos="fade-up" data-aos-duration="1000">
+                <h1 class="glitch" data-text="IFSTEM 2025">IFSTEM 2025</h1>
+                <h2>Innovations and Frontiers in Science, Technology Engineering and Materials</h2>
+                <div class="tagline">
+                    <span>Bridging</span>
+                    <span>Science</span>
+                    <span>and</span>
+                    <span>Sustainability</span>
+                </div>
+                <p class="event-details"><i class="fas fa-calendar-alt"></i> May 30-31, 2025 &nbsp;&nbsp;<i class="fas fa-map-marker-alt"></i> JIET, Jodhpur (Raj.) &nbsp;&nbsp;<i class="fas fa-video"></i> Hybrid Mode</p>
+                <div class="countdown" id="countdown">
+                    <div>
+                        <span id="days">00</span>
+                        <p>Days</p>
+                    </div>
+                    <div>
+                        <span id="hours">00</span>
+                        <p>Hours</p>
+                    </div>
+                    <div>
+                        <span id="minutes">00</span>
+                        <p>Minutes</p>
+                    </div>
+                    <div>
+                        <span id="seconds">00</span>
+                        <p>Seconds</p>
+                    </div>
+                </div>
+                <div class="cta-buttons">
+                    <a href="#register" class="btn btn-primary">Register Now</a>
+                    <a href="#tracks" class="btn btn-secondary">Explore Tracks</a>
+                </div>
+                <div class="scroll-down">
+                    <a href="#about">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">About The Conference</span>
+                <h2>Bridging Science and Sustainability</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text" data-aos="fade-right" data-aos-delay="200">
+                    <p>The 21st century is witnessing an urgent need to develop sustainable practices and solutions that address global environmental, societal, and economic challenges. In this context, the integration of Science, Technology, Engineering, and Materials disciplines holds transformative potential for driving sustainable innovations.</p>
+                    <p>The conference, Innovations and Frontiers in Science, Technology Engineering and Materials: Bridging Science and Sustainability (IFSTEM 2025) aims to explore the intersection of cutting-edge research and sustainability efforts, facilitating collaboration between interdisciplinary stakeholders to accelerate progress toward a more sustainable future.</p>
+                    <div class="stats-container">
+                        <div class="stats">
+                            <div class="stat-item" data-aos="zoom-in" data-aos-delay="300">
+                                <div class="stat-icon"><i class="fas fa-calendar-day"></i></div>
+                                <h3 class="counter" data-target="2">0</h3>
+                                <p>Days</p>
+                            </div>
+                            <div class="stat-item" data-aos="zoom-in" data-aos-delay="400">
+                                <div class="stat-icon"><i class="fas fa-users"></i></div>
+                                <h3 class="counter" data-target="30">0</h3>
+                                <p>Speakers</p>
+                            </div>
+                            <div class="stat-item" data-aos="zoom-in" data-aos-delay="500">
+                                <div class="stat-icon"><i class="fas fa-project-diagram"></i></div>
+                                <h3 class="counter" data-target="10">0</h3>
+                                <p>Tracks</p>
+                            </div>
+                            <div class="stat-item" data-aos="zoom-in" data-aos-delay="600">
+                                <div class="stat-icon"><i class="fas fa-globe"></i></div>
+                                <h3>Hybrid</h3>
+                                <p>Mode</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image" data-aos="fade-left" data-aos-delay="200">
+                    <div class="image-container">
+                        <img src="https://images.unsplash.com/photo-1507668077129-56e32842fceb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Conference audience">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Institute Section -->
+    <section id="institute" class="institute">
+        <div class="parallax-bg"></div>
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">About The Institute</span>
+                <h2>JIET, Jodhpur</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="institute-content">
+                <div class="institute-image" data-aos="fade-right" data-aos-delay="200">
+                    <div class="image-container">
+                        <img src="https://images.unsplash.com/photo-1562774053-701939374585?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1186&q=80" alt="JIET Campus">
+                    </div>
+                </div>
+                <div class="institute-text" data-aos="fade-left" data-aos-delay="200">
+                    <div class="text-card">
+                        <p>Jodhpur Institute of Engineering and Technology (JIET) is devoted to promoting technical and scientific literacy amongst young and inquisitive minds with contemporary temperament right from its inception in 2003. JIET is the first engineering institution in Western Rajasthan to have an autonomous status in five professional courses (Engineering, Management, Design, Computer Application and Applied Arts & Crafts).</p>
+                        <p>Also, the institute has earned UGC recognition under Section 2(f). At present, the institute runs ten UG programs and six PG programs. JIET is recognized by AICTE, New Delhi, and affiliated with Bikaner Technical University, Bikaner.</p>
+                        <div class="achievements">
+                            <div class="achievement" data-aos="zoom-in" data-aos-delay="300">
+                                <div class="achievement-icon">
+                                    <i class="fas fa-award"></i>
+                                </div>
+                                <div class="achievement-text">
+                                    <h4>NAAC Grade "A"</h4>
+                                </div>
+                            </div>
+                            <div class="achievement" data-aos="zoom-in" data-aos-delay="400">
+                                <div class="achievement-icon">
+                                    <i class="fas fa-certificate"></i>
+                                </div>
+                                <div class="achievement-text">
+                                    <h4>NBA Accreditation</h4>
+                                    <p>CSE, CE and EE</p>
+                                </div>
+                            </div>
+                            <div class="achievement" data-aos="zoom-in" data-aos-delay="500">
+                                <div class="achievement-icon">
+                                    <i class="fas fa-university"></i>
+                                </div>
+                                <div class="achievement-text">
+                                    <h4>Autonomous Status</h4>
+                                    <p>5 Professional Courses</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Jodhpur Section -->
+    <section id="jodhpur" class="jodhpur">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">The Blue City</span>
+                <h2>About Jodhpur</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="jodhpur-content">
+                <div class="jodhpur-text" data-aos="fade-right" data-aos-delay="200">
+                    <div class="text-card">
+                        <p>Jodhpur formerly known as Marwar founded by Rao Jodha in 1459, is a district in the Indian state of Rajasthan (Also known as Sun-city and Blue City). It is the second-largest metropolitan city in the state.</p>
+                        <p>Jodhpur is a popular tourist destination featuring many places, forts and temples, set in the stark landscapes of the Thar Desert. Jodhpur other than its cultural prosperity also has a diversified footprint in the education sector with IIT, AIIMS, NIFT, FDDI, NLU, IIHTs and other world-class institutions because of which the city made its mark on the global map.</p>
+                        <p>With the infrastructure and opportunities that have risen in recent years, Jodhpur is taking the next leap in the field of research and education.</p>
+                    </div>
+                </div>
+                <div class="jodhpur-gallery" data-aos="fade-left" data-aos-delay="200">
+                    <div class="gallery-container">
+                        <div class="gallery-item">
+                            <img src="https://images.unsplash.com/photo-1477587458883-47145ed94245?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Mehrangarh Fort">
+                            <div class="gallery-caption">Mehrangarh Fort</div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="https://images.unsplash.com/photo-1524613032530-449a5d94c285?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=735&q=80" alt="Blue City View">
+                            <div class="gallery-caption">Blue City View</div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="https://images.unsplash.com/photo-1590080552494-dcda538fa459?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1169&q=80" alt="Umaid Bhawan Palace">
+                            <div class="gallery-caption">Umaid Bhawan Palace</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Committee Section -->
+    <section id="committee" class="committee">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">Our Team</span>
+                <h2>Conference Committee</h2>
+                <div class="underline"></div>
+            </div>
+            
+            <!-- Key Committee Members -->
+            <div class="key-committee">
+                <div class="committee-card patron" data-aos="flip-left" data-aos-delay="100">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="member-image">
+                                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Ar. Rahul Singhi">
+                            </div>
+                            <div class="member-info">
+                                <h4>Ar. Rahul Singhi</h4>
+                                <p class="member-role">Patron</p>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <h4>Ar. Rahul Singhi</h4>
+                            <p class="member-role">Patron</p>
+                            <p>Director - Poornima & JIET Group</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="committee-card chair" data-aos="flip-left" data-aos-delay="200">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="member-image">
+                                <img src="https://randomuser.me/api/portraits/men/42.jpg" alt="Prof. Avnish Bora">
+                            </div>
+                            <div class="member-info">
+                                <h4>Prof. Avnish Bora</h4>
+                                <p class="member-role">Conference Chair</p>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <h4>Prof. Avnish Bora</h4>
+                            <p class="member-role">Conference Chair</p>
+                            <p>Director – JIET (An Autonomous Institute affiliated to Bikaner Technical University)</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="committee-card host" data-aos="flip-left" data-aos-delay="300">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="member-image">
+                                <img src="https://randomuser.me/api/portraits/men/52.jpg" alt="Prof. A.M. Khan">
+                            </div>
+                            <div class="member-info">
+                                <h4>Prof. A.M. Khan</h4>
+                                <p class="member-role">Conference Host</p>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <h4>Prof. A.M. Khan</h4>
+                            <p class="member-role">Conference Host</p>
+                            <p>Dean - Applied Sciences, JIET</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Conveners -->
+            <div class="conveners">
+                <div class="committee-card convener" data-aos="flip-left" data-aos-delay="400">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="member-image">
+                                <img src="https://randomuser.me/api/portraits/women/42.jpg" alt="Dr. Sushma Dave">
+                            </div>
+                            <div class="member-info">
+                                <h4>Dr. Sushma Dave</h4>
+                                <p class="member-role">Convener</p>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <h4>Dr. Sushma Dave</h4>
+                            <p class="member-role">Convener</p>
+                            <p>Prof. - Chemistry - JIET</p>
+                            <p>M.: 96729-53335</p>
+                            <p>E-mail: sushma.dave@jietjodhpur.ac.in</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="committee-card co-convener" data-aos="flip-left" data-aos-delay="500">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="member-image">
+                                <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Ms. Nidhi Gupta">
+                            </div>
+                            <div class="member-info">
+                                <h4>Ms. Nidhi Gupta</h4>
+                                <p class="member-role">Co-Convener</p>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <h4>Ms. Nidhi Gupta</h4>
+                            <p class="member-role">Co-Convener</p>
+                            <p>Asst. Prof., Physics - JIET</p>
+                            <p>M.: 94607 68070</p>
+                            <p>E-mail: nidhi.gupta@jietjodhpur.ac.in</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Committee Tabs -->
+            <div class="committee-tabs" data-aos="fade-up" data-aos-delay="200">
+                <div class="tabs">
+                    <button class="tab-btn active" data-tab="advisory">Advisory Board</button>
+                    <button class="tab-btn" data-tab="steering">Steering Committee</button>
+                    <button class="tab-btn" data-tab="programme">Programme Committee</button>
+                    <button class="tab-btn" data-tab="members">Members</button>
+                </div>
+                
+                <div class="tab-content">
+                    <div class="tab-pane active" id="advisory">
+                        <div class="committee-list">
+                            <ul>
+                                <li>Prof. Ithiopan Jeerapan – Assistant Professor, Prince of Songkla University, Hat Yai, Songkhla, Thailand</li>
+                                <li>Dr. Siomar Soares – Professor, Federal University of Triângulo Mineiro, Uberaba, Minas Gerais, Brazil</li>
+                                <li>Dr. Sandeep Tiwari – Visiting professor, Brazil</li>
+                                <li>Prof. Dipak Maity – Professor, Indiana University, Bloomington, United States</li>
+                                <li>Dr. Mika Silianpää – Professor, University of Johannesburg, Johannesburg, South Africa</li>
+                                <li>Dr. S.R. Vadera – Professor, IIT Jodhpur, Jodhpur (Raj.)</li>
+                                <li>Dr. Shruti Gupta – Professor, Joint Director, Commissionerate College Education, Jodhpur (Raj.)</li>
+                                <li>Prof. Shibu Pillai – Assistant Professor, Nirma University, Ahmedabad, Gujarat</li>
+                                <li>Prof. Rosalin Sahu – Professor, KIIT University, Bhubaneswar, Odisha</li>
+                                <li>Prof. Ram Sevak Singh – Senior Associate Professor, O.P. Jindal University, Raipur, Chhattisgarh</li>
+                                <li>Dr. Senthil Kannan - K – Researcher, Centre for Global Health Research, SMC SIMATS, Saveetha University, Chennai</li>
+                                <li>Dr. Sukdep Pal – Principal Scientist, National Environmental Engineering Research Institute (NEERI), Nagpur, Maharashtra</li>
+                                <li>Dr. Jayshree Vajpayee – Professor, MBM College, Jodhpur</li>
+                                <li>Dr. Rakesh Sharma – Professor, IIT Jodhpur</li>
+                                <li>Prof. Kiran - IIT Jodhpur, Jodhpur</li>
+                                <li>Dr. Neelima Gupta – Professor, University of Rajasthan, Jaipur</li>
+                                <li>Dr. Gyan Singh Shekhawat – Head of Department (Botany), Jodhpur (Raj.)</li>
+                                <li>Dr. Sameer Vyas – Sr. Scientist, CMSCRI, Delhi</li>
+                                <li>Dr. Jitendra Panwar – Researcher, BITS Pilani, Pilani</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-pane" id="steering">
+                        <div class="committee-list">
+                            <ul>
+                                <li>Ms. Mamta Garg - Dean, Faculty of Computer Engineering – JIET</li>
+                                <li>Prof. Vinit Mehta - Dean, Faculty of Engineering and Technology– JIET</li>
+                                <li>Prof. Shiv Prasad Joshi - Dean, Faculty of Management and Commerce – JIET</li>
+                                <li>Prof. Sanjay BC Gaur - Dean, Research & Innovation –JIET</li>
+                                <li>Prof. Sandeep Mathur - Controller of Examination - JIET</li>
+                                <li>Prof. Pratibha Peshwa Swami - HOD (Mentor), Technology – JIET</li>
+                                <li>Ms. Pragya Singh - HOD, Design - JIET</li>
+                                <li>Prof. Laxmi Choudhary - HOD, Electronics and Communication Engg. - JIET</li>
+                                <li>Prof. Kiran Bhoot - HOD (Mentor), Civil Engineering - JIET</li>
+                                <li>Lt. Anamika Choudhary - HOD, Department of Computer Applications – JIET</li>
+                                <li>Mr. Abhishek Dixit - HOD, Mechanical Engineering – JIET</li>
+                                <li>Prof. Abhishek Arya - HOD (Admin), Civil Engineering - JIET</li>
+                                <li>Mr. Chandershekar Singh - HOD (Admin), Technology - JIET</li>
+                                <li>Ms. Anju Jangid - HOD (Admin) - Computer Science & Engineering, JIET</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-pane" id="programme">
+                        <div class="committee-list">
+                            <ul>
+                                <li>Dr. Y.N. Singh – Professor, BTU, Bikaner</li>
+                                <li>Dr. Deepak Bansal – Professor, BTU, Bikaner</li>
+                                <li>Dr. Jayshree Vajpayee – Prof. MBM Engineering College, Jodhpur</li>
+                                <li>Dr. Shaloo Dhawan – Assistant Director, RFSL, Jodhpur</li>
+                                <li>Dr. Vikal Gupta – Professor, Department of Chemistry, Jodhpur</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-pane" id="members">
+                        <div class="committee-list">
+                            <ul>
+                                <li>Dr. Anjali Mathur (Professor, Mathematics-JIET)</li>
+                                <li>Dr. Lalita Mistry (Professor, Mathematics-JIET)</li>
+                                <li>Mr. Harsh Soni (Asst. Professor, Maths - JIET)</li>
+                                <li>Mr. Dinesh Devra (Asst. Professor, Chemistry - JIET)</li>
+                                <li>Mr. Bhavesh Khatri (Asst. professor)</li>
+                                <li>Mr. Rajneesh Awasthi (Asst. lecturer-Chemistry JIET)</li>
+                                <li>Ms. Tanisha Bohra (Asst. Lecturer, Physics - JIET)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tracks Section -->
+    <section id="tracks" class="tracks">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">Research Areas</span>
+                <h2>Conference Tracks</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="tracks-content">
+                <p class="tracks-intro" data-aos="fade-up" data-aos-delay="100">The conference will cover a range of topics within STEM, emphasizing their role in advancing sustainability. The focus will be on, but not limited to the following major areas:</p>
+                
+                <div class="tracks-grid">
+                    <div class="track-card" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="track-icon">
+                            <i class="fas fa-flask"></i>
+                        </div>
+                        <h3>Chemistry & Materials</h3>
+                        <ul>
+                            <li>Photochemistry Photobiology</li>
+                            <li>Functional materials</li>
+                            <li>Framework & Hybrid Materials</li>
+                            <li>Asymmetric Synthesis, Catalysis & Drug Discovery</li>
+                            <li>Energy Storage & Devices Agrochemicals Pharmaceuticals</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="track-card" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="track-icon">
+                            <i class="fas fa-microscope"></i>
+                        </div>
+                        <h3>Biomaterials & Biotechnology</h3>
+                        <ul>
+                            <li>Bioactive materials</li>
+                            <li>Advanced Environmental Materials</li>
+                            <li>Smart and intelligent materials</li>
+                            <li>Computational Design & Application in Photo Science</li>
+                            <li>Drug Discovery Drug Repurposing</li>
+                            <li>Plant Pathology & Virology</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="track-card" data-aos="zoom-in" data-aos-delay="300">
+                        <div class="track-icon">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <h3>Sustainable Solutions</h3>
+                        <ul>
+                            <li>Sustainable Energy Solutions</li>
+                            <li>Climate Change and Environmental Protection</li>
+                            <li>Circular Economy and Waste Management</li>
+                            <li>Waste-to-energy technologies</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="track-card" data-aos="zoom-in" data-aos-delay="400">
+                        <div class="track-icon">
+                            <i class="fas fa-seedling"></i>
+                        </div>
+                        <h3>Agriculture & Food Security</h3>
+                        <ul>
+                            <li>Agriculture and Food Security</li>
+                            <li>Precision agriculture technologies</li>
+                            <li>Biotechnology in sustainable food production</li>
+                            <li>Reducing food waste through innovation</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="track-card" data-aos="zoom-in" data-aos-delay="500">
+                        <div class="track-icon">
+                            <i class="fas fa-microchip"></i>
+                        </div>
+                        <h3>Emerging Technologies</h3>
+                        <ul>
+                            <li>Emerging Technologies for Sustainability</li>
+                            <li>Artificial intelligence and machine learning in sustainability</li>
+                            <li>Biotechnology for environmental remediation</li>
+                            <li>Blockchain for transparent supply chains and environmental protection</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Important Dates Section -->
+    <section id="dates" class="dates">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">Mark Your Calendar</span>
+                <h2>Important Dates</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="dates-content">
+                <div class="timeline" data-aos="fade-up" data-aos-delay="200">
+                    <div class="timeline-item">
+                        <div class="timeline-date">
+                            <span>15</span>
+                            <p>April 2025</p>
+                        </div>
+                        <div class="timeline-content">
+                            <h3>Abstract Submission Deadline</h3>
+                            <p>Last date for submission of the Abstract</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-date">
+                            <span>25</span>
+                            <p>April 2025</p>
+                        </div>
+                        <div class="timeline-content">
+                            <h3>Notification of Acceptance</h3>
+                            <p>Notification of Abstract Acceptance</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-date">
+                            <span>15</span>
+                            <p>May 2025</p>
+                        </div>
+                        <div class="timeline-content">
+                            <h3>Registration Deadline</h3>
+                            <p>The last date of registration</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-date">
+                            <span>30-31</span>
+                            <p>May 2025</p>
+                        </div>
+                        <div class="timeline-content">
+                            <h3>Conference Dates</h3>
+                            <p>IFSTEM 2025 Conference</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call for Papers Section -->
+    <section id="call-for-papers" class="call-for-papers">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">Participate</span>
+                <h2>Call for Papers</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="call-content">
+                <div class="call-text" data-aos="fade-up" data-aos-delay="200">
+                    <p>Researchers, Professional and Research scholars are invited to present their original and unpublished work and can share their experiences in the form of technical papers in the conference. The focus of this conference will be on, but not limited to the major areas listed in the tracks section.</p>
+                </div>
+                
+                <div class="presentation-modes" data-aos="fade-up" data-aos-delay="300">
+                    <h3>Mode of Presentation</h3>
+                    <div class="modes">
+                        <div class="mode">
+                            <div class="mode-icon">
+                                <i class="fas fa-microphone"></i>
+                            </div>
+                            <p>ORAL</p>
+                        </div>
+                        <div class="mode">
+                            <div class="mode-icon">
+                                <i class="fas fa-clipboard"></i>
+                            </div>
+                            <p>POSTER</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="award-categories" data-aos="fade-up" data-aos-delay="400">
+                    <h3>Award Categories</h3>
+                    <div class="awards">
+                        <div class="award">
+                            <div class="award-icon">
+                                <i class="fas fa-trophy"></i>
+                            </div>
+                            <h4>Best Oral</h4>
+                            <p>Student/Faculty</p>
+                        </div>
+                        <div class="award">
+                            <div class="award-icon">
+                                <i class="fas fa-medal"></i>
+                            </div>
+                            <h4>Best Poster</h4>
+                            <p>Student/Faculty</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="submission-cta" data-aos="fade-up" data-aos-delay="500">
+                    <a href="#" class="btn btn-primary">Submit Abstract</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Section -->
+    <section id="register" class="register">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">Join Us</span>
+                <h2>Register Now</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="register-content">
+                <div class="registration-fees" data-aos="fade-up" data-aos-delay="200">
+                    <h3>Registration Fees</h3>
+                    <div class="fees-table">
+                        <div class="fee-row">
+                            <div class="fee-category">Industry</div>
+                            <div class="fee-amount">₹2500/-</div>
+                        </div>
+                        <div class="fee-row">
+                            <div class="fee-category">Faculty</div>
+                            <div class="fee-amount">₹2000/-</div>
+                        </div>
+                        <div class="fee-row">
+                            <div class="fee-category">Research Scholar/Student</div>
+                            <div class="fee-amount">₹1000/-</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="registration-form" id="registration-form" data-aos="fade-up" data-aos-delay="300">
+                    <h3>Registration Form</h3>
+                    <form id="register-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="institution">Institution/Organization</label>
+                                <input type="text" id="institution" name="institution" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="designation">Designation</label>
+                                <input type="text" id="designation" name="designation" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="category">Registration Category</label>
+                                <select id="category" name="category" required>
+                                    <option value="">Select Category</option>
+                                    <option value="industry">Industry</option>
+                                    <option value="faculty">Faculty</option>
+                                    <option value="scholar">Research Scholar/Student</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="presentation">Presentation Type</label>
+                                <select id="presentation" name="presentation" required>
+                                    <option value="">Select Type</option>
+                                    <option value="oral">Oral Presentation</option>
+                                    <option value="poster">Poster Presentation</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="title">Paper Title</label>
+                            <input type="text" id="title" name="title" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="abstract">Abstract</label>
+                            <textarea id="abstract" name="abstract" required></textarea>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="accommodation">Accommodation Required</label>
+                                <select id="accommodation" name="accommodation" required>
+                                    <option value="no">No</option>
+                                    <option value="yes">Yes</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group checkbox">
+                            <input type="checkbox" id="terms" name="terms" required>
+                            <label for="terms">I agree to the <a href="#">Terms and Conditions</a></label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">Complete Registration</button>
+                    </form>
+                </div>
+                
+                <div class="payment-info" data-aos="fade-up" data-aos-delay="400">
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-credit-card"></i>
+                        </div>
+                        <h3>Payment Options</h3>
+                        <p>Payment details will be shared after abstract acceptance.</p>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-hotel"></i>
+                        </div>
+                        <h3>Accommodation</h3>
+                        <p>Accommodation can be arranged upon request on payment basis.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">Get in Touch</span>
+                <h2>Contact Us</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info" data-aos="fade-right" data-aos-delay="200">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h3>Address</h3>
+                            <p>JIET Universe : N.H. No. 62, New Pali Road, Mogra, Jodhpur (Raj.)</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h3>Email</h3>
+                            <p>info@jietjodhpur.ac.in</p>
+                            <p>sushma.dave@jietjodhpur.ac.in</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>+91 96729-53335 (Dr. Sushma Dave)</p>
+                            <p>+91 94607-68070 (Ms. Nidhi Gupta)</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <div>
+                            <h3>Website</h3>
+                            <p><a href="http://www.jietjodhpur.ac.in">www.jietjodhpur.ac.in</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-map" data-aos="fade-left" data-aos-delay="200">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3578.0141282708237!2d73.0412!3d26.2691!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39418c3d027b5e8b%3A0x9c218e6b9a42c4b5!2sJodhpur%20Institute%20of%20Engineering%20and%20Technology!5e0!3m2!1sen!2sin!4v1684789542051!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo" data-aos="fade-up" data-aos-delay="100">
+                    <h2>IFSTEM<span>2025</span></h2>
+                    <p>Bridging Science and Sustainability</p>
+                    <p>In association with: Chemical Research Society of India</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column" data-aos="fade-up" data-aos-delay="200">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#committee">Committee</a></li>
+                            <li><a href="#tracks">Tracks</a></li>
+                            <li><a href="#dates">Important Dates</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column" data-aos="fade-up" data-aos-delay="300">
+                        <h3>Information</h3>
+                        <ul>
+                            <li><a href="#call-for-papers">Call for Papers</a></li>
+                            <li><a href="#register">Registration</a></li>
+                            <li><a href="#">Terms & Conditions</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#contact">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 IFSTEM Conference. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
