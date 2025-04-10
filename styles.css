@@ -32,6 +32,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
 }
 
 html {
@@ -40,7 +41,6 @@ html {
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     color: var(--text-color);
     background-color: var(--light-color);
@@ -637,7 +637,6 @@ header .container {
 /* Scroll Down Animation */
 .scroll-down {
     position: absolute;
-    bottom: 30px;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -745,16 +744,17 @@ header .container {
 }
 
 .stats {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    max-width: 500px;
+    width: 100%;
+    scale: 0.9;
 }
 
 .stat-item {
-    flex: 1;
-    min-width: 120px;
     background-color: var(--light-color);
-    padding: 25px 20px;
+    padding: 15px 10px;
     border-radius: 10px;
     text-align: center;
     box-shadow: var(--card-shadow);
@@ -780,15 +780,15 @@ header .container {
 }
 
 .stat-icon {
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: var(--primary-color);
-    margin-bottom: 10px;
+    margin-bottom: 6px;
 }
 
 .stat-item h3 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: var(--primary-color);
-    margin-bottom: 5px;
+    margin-bottom: 3px;
     font-weight: 700;
 }
 
@@ -1264,10 +1264,10 @@ header .container {
     top: 0;
     right: -150px;
     width: 120px;
-    padding: 15px 0;
+    padding: 20px;
     background: var(--gradient-primary);
     color: var(--light-color);
-    border-radius: 10px;
+    border-radius: 20px;
     text-align: center;
     box-shadow: var(--card-shadow);
 }
@@ -1312,6 +1312,13 @@ header .container {
     max-width: 800px;
     margin: 0 auto 50px;
     font-size: 1.1rem;
+}
+.presentation-container {
+    display: flex;
+    justify-content: space-around; /* Ensures even spacing */
+    align-items: flex-start;
+    flex-wrap: wrap; /* Makes it responsive */
+    gap: 40px; /* Adds space between sections */
 }
 
 .presentation-modes,
@@ -1736,7 +1743,6 @@ footer {
 /* Responsive Styles */
 @media (max-width: 1200px) {
     .timeline-date {
-        width: 100px;
         right: -120px;
     }
     
@@ -1875,6 +1881,9 @@ footer {
     .section-header h2 {
         font-size: 2rem;
     }
+    .hero-content{
+        scale: 0.75;
+    }
     
     .hero-content h1 {
         font-size: 2rem;
@@ -1898,5 +1907,83 @@ footer {
     
     .gallery-item:first-child {
         grid-column: span 1;
+    }
+}
+
+.carousel-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    padding: 20px 0;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-track {
+    display: flex;
+    animation: scroll 30s linear infinite;
+    width: fit-content;
+}
+
+.carousel-track:hover {
+    animation-play-state: paused;
+}
+
+.carousel-item {
+    flex: 0 0 300px;
+    height: 400px;
+    margin: 0 15px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.carousel-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.carousel-content {
+    padding: 20px;
+    background-color: white;
+}
+
+.carousel-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.carousel-description {
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.4;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* For smaller screens */
+@media (max-width: 768px) {
+    .carousel-item {
+        flex: 0 0 250px;
+        height: 350px;
+        margin: 0 10px;
     }
 }
