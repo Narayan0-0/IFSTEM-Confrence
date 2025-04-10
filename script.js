@@ -432,3 +432,15 @@ document.addEventListener('DOMContentLoaded', function() {
     `;
     document.head.appendChild(style);
 });
+
+ // Clone items to create the infinite effect
+ window.addEventListener('DOMContentLoaded', () => {
+    const track = document.getElementById('carouselTrack');
+    const items = track.querySelectorAll('.carousel-item');
+    
+    // Clone each item and append to create the infinite effect
+    items.forEach(item => {
+        const clone = item.cloneNode(true);
+        track.appendChild(clone);
+    });
+});
